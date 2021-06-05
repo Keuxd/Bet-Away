@@ -43,7 +43,6 @@ public class GameCore extends GameApplication{
 	@Override
 	protected void initGameVars(Map<String, Object> vars) {
 		FXGL.getGameScene().setCursorInvisible();
-		vars.put("coins", 100);
 	}
 	
 	@Override
