@@ -71,6 +71,7 @@ public class GameCore extends GameApplication{
 		FXGL.getAudioPlayer().playSound(FXGL.getAssetLoader().loadSound("assets_sounds_scratch_in.mp3"));
 		int oldCurrentScreen = currentScreen;
 		currentScreen = -1;
+		
 		ImageView iv = new ImageView();
 		FXGL.getAssetLoader().clearCache();
 		iv.setImage(FXGL.getAssetLoader().loadImage("scratch_in.gif"));
