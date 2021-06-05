@@ -75,7 +75,6 @@ public class GameCore extends GameApplication{
 		ImageView iv = new ImageView();
 		FXGL.getAssetLoader().clearCache();
 		iv.setImage(FXGL.getAssetLoader().loadImage("scratch_in.gif"));
-		
 		var transition = FXGL.entityBuilder()
 			.view(iv)
 			.zIndex(2)
