@@ -27,7 +27,8 @@ logs
 system
 
 # Ignore compiled files and duplicated assets
-bin
+*bin
+
 
 # Ignore Eclipse stuff
 .settings
