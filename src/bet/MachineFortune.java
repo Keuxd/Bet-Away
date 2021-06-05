@@ -1,7 +1,5 @@
 package bet;
 
-import java.util.ArrayList;
-
 import com.almasb.fxgl.dsl.FXGL;
 
 public class MachineFortune {

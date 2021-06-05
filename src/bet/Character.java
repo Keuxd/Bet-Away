@@ -360,13 +360,13 @@ public class Character {
 		if(direction == Direction.RIGHT) {x = 3.6;}
 		else {x = -3.6;}
 		
-			var fullAnimation = FXGL.run(() -> {
+			FXGL.run(() -> {
 				for(Entity entity : entities) {
-					var stepIn = FXGL.run(() -> {entity.translate(-x,-y);}, Duration.millis(10),6);
+					FXGL.run(() -> {entity.translate(-x,-y);}, Duration.millis(10),6);
 	
 					//after the stepIn it steps out
 					FXGL.runOnce(() -> {
-						var stepOut = FXGL.run(() -> {entity.translate(-x,y);}, Duration.millis(10),6);
+						FXGL.run(() -> {entity.translate(-x,y);}, Duration.millis(10),6);
 					}, Duration.millis(100));
 				}
 			}, Duration.millis(200), 5);

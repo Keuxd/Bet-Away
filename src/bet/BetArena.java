@@ -14,7 +14,6 @@ public class BetArena {
 	private static Character player2;
 	private static int bet;
 	private static ArrayList<Entity> screenElements;
-	private static FortuneMachine machine;
 	private static MachineFortune maquina;
 	
 	protected static void init(Personality firstPlayer, Personality secondPlayer, int betVal, Direction direction){
@@ -34,7 +33,7 @@ public class BetArena {
 		player2.setPosition(screenElements.get(0).getPosition().add(973,386.4-111.4));
 			player2.attachToWorld();
 			
-		machine = new FortuneMachine(player1, player2);
+//		machine = new FortuneMachine(player1, player2);
 		maquina = new MachineFortune(player1, player2);
 		
 		FXGL.run(() -> {
@@ -74,7 +73,7 @@ public class BetArena {
 		player2.removeAllEntitiesFromWorld();
 		player2 = null;
 		
-		machine = null;
+//		machine = null;
 	}
 	protected static Character getPlayer(int index) {
 		switch(index) {
