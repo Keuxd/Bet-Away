@@ -28,7 +28,7 @@ public class InfoScreen {
 		
 		
 		var leftText = new Text(getInfo());
-		leftText.setFont(FXGL.getAssetLoader().loadFont("FuturaHandWritten.ttf").newFont(25.0));
+		leftText.setFont(FXGL.getAssetLoader().loadFont("FuturaHandwritten.ttf").newFont(25.0));
 		
 		screenElements.add(FXGL.entityBuilder()
 							   .view(leftText)
