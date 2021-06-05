@@ -50,7 +50,6 @@ public class Menu {
 		textFont.setTranslateY(textPosition.getY());
 		textFont.setFont(FXGL.getAssetLoader().loadFont("FuturaHandwritten.ttf").newFont(40.0));
 
-		
 		var buttonImage = FXGL.getAssetLoader().loadTexture("button1.png");
 		buttonImage.setScaleX(0.6);
 		buttonImage.setScaleY(0.6);
