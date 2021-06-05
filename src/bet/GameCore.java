@@ -44,6 +44,7 @@ public class GameCore extends GameApplication{
 		settings.setFullScreenAllowed(true);
 		settings.setFullScreenFromStart(true);
 		
+		settings.setFileSystemWriteAllowed(false);
 		settings.setApplicationMode(ApplicationMode.RELEASE);
 	}
 	
