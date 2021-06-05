@@ -17,17 +17,7 @@ public class BetButton {
 		this.buttonElements = new Entity[4];
 		this.players = new Personality[2];
 		
-		generateRandomPlayers();
-		
-//		if(i == 180) {
-//			players[0] = Personality.COPIADOR;
-//			players[1] = Personality.TRAPACEIRO;
-//		}
-//		if(i == 480) {
-//			players[0] = Personality.RANCOROSO;
-//			players[1] = Personality.RANCOROSO;
-//		}
-		
+		generateRandomPlayers();		
 		
 		//button
 		buttonElements[0] = FXGL.entityBuilder()
