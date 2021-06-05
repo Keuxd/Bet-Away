@@ -1,5 +1,5 @@
 # Bet Away
-A simple bet game inspired by 'The Evolution of Trust' and made in [FXGL](https://github.com/AlmasB/FXGL)
+A simple bet game inspired by ['The Evolution of Trust'](https://github.com/ncase/trust) and made in [FXGL](https://github.com/AlmasB/FXGL)
 
 <img width="467" alt="" src="https://github.com/Keuxd/Bet-Away/blob/main/src/assets/textures/bet_away.png">
 
