@@ -8,4 +8,4 @@ A simple bet game inspired by 'The Evolution of Trust' and made in FXGL
 - Java 11+
 
 # [Download](https://drive.google.com/file/d/1ugy5oOMeji75GN802fokyfKnsA4uYrS5/view)
-In order to run the compiled .jar file you'll need Java 11, which can be found at oracle's website.
+In order to run the compiled .jar file you'll need Java 11, which can be found at [oracle's website.](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
