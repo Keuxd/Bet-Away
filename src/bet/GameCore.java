@@ -2,6 +2,7 @@ package bet;
 
 import java.util.Map;
 
+import com.almasb.fxgl.app.ApplicationMode;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.app.GameSettings;
 import com.almasb.fxgl.dsl.FXGL;
@@ -27,14 +28,16 @@ public class GameCore extends GameApplication{
 	protected void initSettings(GameSettings settings) {
 		settings.setWidth(1366);
 		settings.setHeight(768);
+		
 		settings.setTitle("Bet Away");
 		settings.setVersion("");
 
-//		settings.setPreserveResizeRatio(true);
-		settings.setManualResizeEnabled(true);
 		settings.setGameMenuEnabled(false);
-		settings.setFullScreenFromStart(true);
+		settings.setPreserveResizeRatio(true);
 		settings.setFullScreenAllowed(true);
+		settings.setFullScreenFromStart(true);
+		
+		settings.setApplicationMode(ApplicationMode.RELEASE);
 	}
 	
 	@Override
