@@ -72,7 +72,7 @@ public class GameCore extends GameApplication{
 		currentScreen = -1;
 		ImageView iv = new ImageView();
 		FXGL.getAssetLoader().clearCache();
-		iv.setImage(FXGL.getAssetLoader().loadImage("indo.gif"));
+		iv.setImage(FXGL.getAssetLoader().loadImage("scratch_in.gif"));
 		
 		var transition = FXGL.entityBuilder()
 			.view(iv)
@@ -82,7 +82,7 @@ public class GameCore extends GameApplication{
 		FXGL.runOnce(() -> {
 			transition.removeFromWorld();
 			FXGL.getAssetLoader().clearCache();
-			iv.setImage(FXGL.getAssetLoader().loadImage("indo1.gif"));
+			iv.setImage(FXGL.getAssetLoader().loadImage("scratch_out.gif"));
 			var outTransition = FXGL.entityBuilder().view(iv).zIndex(2).buildAndAttach();
 			
 			FXGL.runOnce(() -> {
