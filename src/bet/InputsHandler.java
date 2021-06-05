@@ -1,12 +1,10 @@
 package bet;
 
 import com.almasb.fxgl.dsl.FXGL;
-import com.almasb.fxgl.input.TriggerListener;
 
 import javafx.scene.input.KeyCode;
 
 public class InputsHandler {
-	protected static TriggerListener currentTrigger;
 	
 	protected static void initInput() {
 		FXGL.onKeyDown(KeyCode.W, () -> {
