@@ -9,6 +9,7 @@ import javafx.scene.control.Label;
 import javafx.util.Duration;
 
 public class VersusMiniScreen {
+	
 	// 0 -> textBox | 1 -> value | 2 -> top arrow | 3 -> bottom arrow
 	private static Entity[] miniScreenElements;
 	private static Direction direction;
@@ -33,7 +34,6 @@ public class VersusMiniScreen {
 			downArrowAdjust = new Point2D(100.5,160);
 		}
 		
-		
 		miniScreenElements[0] = FXGL.entityBuilder().view(box).at(buttonReferencePosition).buildAndAttach();
 		updateButton();
 		
@@ -52,6 +52,7 @@ public class VersusMiniScreen {
 	protected static void upValue(int extraValue) {
 		if(value + extraValue > GameCore.money) value = 0;
 		else value += extraValue;
+		
 		miniScreenElements[2].translateY(-5);
 		updateButton();
 		
@@ -66,7 +67,6 @@ public class VersusMiniScreen {
 		else value -= extraValue;
 		miniScreenElements[3].translateY(5);
 		updateButton();
-		
 		
 		FXGL.runOnce(() -> {
 			if(GameCore.currentScreen == -1) return;

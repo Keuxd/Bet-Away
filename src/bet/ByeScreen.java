@@ -16,6 +16,7 @@ public class ByeScreen {
 		GameCore.currentScreen = 6;
 		GameCore.money -= bet;
 		screenElements = new ArrayList<Entity>();
+		
 		var text = new Text();
 			text.setFont(FXGL.getAssetLoader().loadFont("FuturaHandwritten.ttf").newFont(55));
 		
@@ -34,7 +35,6 @@ public class ByeScreen {
 			if(GameCore.money == 0) GameCore.money = 100;
 		}
 
-		
 		screenElements.add(FXGL.entityBuilder().at(FXGL.getAppCenter().add(-380,-300)).view(text).buildAndAttach());
 	}
 	
@@ -51,7 +51,6 @@ public class ByeScreen {
 	protected static void ok() {
 		GameCore.procTransition();
 		selfDestruction();
-		
 		
 		FXGL.runOnce(() -> {
 			Menu.initMenu();

@@ -8,6 +8,7 @@ import javafx.geometry.Point2D;
 import javafx.scene.control.Label;
 
 public class BetButton {
+	
 	// 0 -> button_long | 1 -> text | 2 -> player1 | 3 -> player2
 	private Entity[] buttonElements;
 	private Personality[] players;
@@ -89,8 +90,6 @@ public class BetButton {
 		}
 		
 		buttonElements[3].setPosition(buttonElements[0].getPosition().add(adjustPosition));
-		
-		
 	}
 	
 	private void generateRandomPlayers() {
@@ -112,6 +111,7 @@ public class BetButton {
 		for(Entity entity : buttonElements) {
 			entity.removeFromWorld();
 		}
+		
 		buttonElements = null;
 		players = null;
 	}

@@ -60,6 +60,7 @@ public class InfoScreen {
 				FXGL.runOnce(() -> {
 					Menu.initMenu();
 				}, Duration.seconds(1.5));
+				
 				break;
 			}
 			case 1 : {
@@ -73,7 +74,6 @@ public class InfoScreen {
 				break;
 			}
 		}
-		
 	}
 	
 	protected static void updateButtonAction() {
@@ -90,7 +90,7 @@ public class InfoScreen {
 	}
 	
 	private static String getInfo() {
-		return 		"Bem vindo ao 'Bet Away', um simples jogo de apostas de troca de moedas"
+		return 	  "Bem vindo ao 'Bet Away', um simples jogo de apostas de troca de moedas"
 				+ "\nExatamente, você vai apostar em personagens trocando moedas!"
 				+ "\nNesse mundo existe a máquina da fortuna, ela funciona de maneira bem simples"
 				+ "\nSe duas pessoas colocam uma moeda cada, então a máquina vai ejetar 2 moedas pra cada um!"

@@ -41,7 +41,6 @@ public class FortuneMachine {
 		}
 	}
 	
-	
 	protected void controller() {
 		genAction();
 		
@@ -206,5 +205,4 @@ public class FortuneMachine {
 		}
 		return BetAction.COOPERAR;
 	}
-	
 }

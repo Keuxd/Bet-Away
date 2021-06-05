@@ -40,8 +40,6 @@ public class Menu {
 						.buildAndAttach()
 				   );
 		
-		
-		
 		GameCore.currentScreen = 0;
 		updateButtonAction();
 	}

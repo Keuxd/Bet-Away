@@ -43,9 +43,9 @@ public class BetArena {
 			
 		}, Duration.seconds(5),7);
 		
-		FXGL.runOnce(() -> {ByeScreen.init(player1.getCoins(),player2.getCoins(),bet,direction);}, Duration.seconds(40));
-		
-		
+		FXGL.runOnce(() -> {
+			ByeScreen.init(player1.getCoins(),player2.getCoins(),bet,direction);
+		}, Duration.seconds(40));
 	}
 	
 	protected static void updateScore() {

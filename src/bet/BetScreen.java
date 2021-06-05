@@ -41,6 +41,7 @@ public class BetScreen {
 		
 		var money = new Text(String.valueOf(GameCore.money));
 			money.setFont(FXGL.getAssetLoader().loadFont("FuturaHandwritten.ttf").newFont(45));
+	
 		screenElements.add(FXGL.entityBuilder().at(30,60).view(money).buildAndAttach());
 		
 		updateButton();
@@ -105,7 +106,7 @@ public class BetScreen {
 			for(BetButton button : buttons) {
 				button.selfDestruction();
 			}
-			buttons.clear();	
+			buttons.clear();
 		}, Duration.seconds(1.5));
 	}
 	
