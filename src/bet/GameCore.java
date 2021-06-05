@@ -10,16 +10,22 @@ import com.almasb.fxgl.dsl.FXGL;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
-/* A FAZER
+/* 	TODO
  * 
- * - Começar o sistema principal(bets)
+ * - English option(current Portuguese Only)
+ * - Shop
+ * - Game Over
+ * - Update CharScreen(detailed descriptions)
  * 
  */
+
+
 public class GameCore extends GameApplication{
 	
 	//-1 -> Transition |0 -> Menu | 1 -> InfoScreen | 2 -> CharScreen | 3 -> BetScreen | 4 -> VersusScreen
 	protected static int currentScreen;
 	protected static int money = 100;
+	
 	public static void main(String[] args) {
 		launch(args);
 	}
@@ -58,7 +64,6 @@ public class GameCore extends GameApplication{
 	@Override
 	protected void initGame() {
 		FXGL.getAudioPlayer().loopMusic(FXGL.getAssetLoader().loadMusic("assets_sounds_bg_music.mp3"));
-//		FXGL.getUIFactoryService().registerFontFactory(FontType.UI, FXGL.getAssetLoader().loadFont("FuturaHandwritten.ttf"));
 	}
 
 	protected static void procTransition() {
