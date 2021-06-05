@@ -16,6 +16,8 @@ import javafx.util.Duration;
  * - Shop
  * - Game Over
  * - Update CharScreen(detailed descriptions)
+ * - Simplify gameplay formula
+ * - Stage Serialization
  * 
  */
 
