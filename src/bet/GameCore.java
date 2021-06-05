@@ -37,6 +37,7 @@ public class GameCore extends GameApplication{
 		
 		settings.setTitle("Bet Away");
 		settings.setVersion("");
+		settings.setAppIcon("hat_0.png");
 
 		settings.setGameMenuEnabled(false);
 		settings.setPreserveResizeRatio(true);
