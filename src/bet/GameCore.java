@@ -19,7 +19,6 @@ import javafx.util.Duration;
  * 
  */
 
-
 public class GameCore extends GameApplication{
 	
 	//-1 -> Transition |0 -> Menu | 1 -> InfoScreen | 2 -> CharScreen | 3 -> BetScreen | 4 -> VersusScreen
